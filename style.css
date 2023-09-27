@@ -122,6 +122,16 @@ a:hover, a:active {
 /*
 # Header Bar
 --------------------------------*/
+.header{
+
+    position: relative;
+    top:0; left: 0; right: 0;
+    z-index: 10000;
+    display: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 9%;
+}
 .header-bar {
     position: absolute;
     top: 0;
