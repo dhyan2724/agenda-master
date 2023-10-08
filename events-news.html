@@ -18,6 +18,130 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
+
+    <style media="screen">
+        *{margin: 0; padding: 0;}
+body{background-color: rgb(255, 255, 255);}
+.container
+{
+  width: 100%;
+  height: 100%;
+}
+.trans
+{
+  transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+}
+.top
+{
+  display: flex;
+  width: 80vw;
+  height: 80vh;
+  margin-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10vh;
+}
+.top ul
+{
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  box-sizing: border-box;
+}
+.top ul li
+{
+  position: relative;
+  float: left;
+  width: 25%;
+  height: 25%;
+  overflow: hidden;
+}
+
+.top ul li::before
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  content: '';
+  color: white;
+  opacity: 0.4;
+  text-align: center;
+  box-sizing: border-box;
+  pointer-events: none;
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
+.top ul li:hover::before
+{
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.top ul li img
+{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.lightbox
+{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background-color: rgb(179, 106, 179);
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+}
+.lightbox img
+{
+  max-width: 90%;
+  max-height: 80%;
+  position: relative;
+  top: -100%;
+  /* Transition */
+  transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+}
+.lightbox:target
+{
+  outline: none;
+  top: 0;
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 1.2s ease;
+  -moz-transition: all 1.2s ease;
+  -ms-transition: all 1.2s ease;
+  -o-transition: all 1.2s ease;
+  -webkit-transition: all 1.2s ease;
+}
+.lightbox:target img
+{
+  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+    </style>
 </head>
 <body class="events-news-page">
 <header class="site-header">
@@ -74,88 +198,43 @@
 </header><!-- .site-header -->
 
 <div class="container">
-    <div class="row">
-        <div class="col-12">
-            <article class="events-news-post">
-                <header class="entry-header">
-                    <h2 class="entry-title"><a href="#">A guide to all summer festivals</a></h2>
-
-                    <div class="entry-meta flex align-items-center">
-                        <div class="posted-author"><a href="#">by James Williams</a></div>
-
-                        <div class="post-comments"><a href="#">2 Comments</a></div>
-                    </div>
-                </header>
-
-                <figure>
-                    <a href="#"><img src="images/news-1.jpg" alt=""></a>
-
-                    <div class="posted-date"><span>Feb</span><span>11</span><span>‘18</span></div>
-                </figure>
-
-                <div class="entry-content">
-                    <p>Vestibulum eget lacus at mauris sagittis varius. Etiam ut venenatis dui. Nullam tellus risus, pellentesque at facilisis et, scelerisque sit amet metus. Duis vel semper turpis, ac tempus libero. Maecenas id ultrices risus. Aenean nec ornare ipsum, lacinia volutpat urna. Maecenas ut aliquam purus, quis sodales dolor.tiam ut venenatis dui. Nullam tellus risus, pellentesque at facilisis et, scelerisque sit ame.</p>
-                </div>
-            </article>
-
-            <article class="events-news-post">
-                <header class="entry-header">
-                    <h2 class="entry-title"><a href="#">Top 10 electronic music events in February</a></h2>
-
-                    <div class="entry-meta flex align-items-center">
-                        <div class="posted-author"><a href="#">by James Williams</a></div>
-
-                        <div class="post-comments"><a href="#">2 Comments</a></div>
-                    </div>
-                </header>
-
-                <figure>
-                    <a href="#"><img src="images/news-2.jpg" alt=""></a>
-
-                    <div class="posted-date"><span>Feb</span><span>11</span><span>‘18</span></div>
-                </figure>
-
-                <div class="entry-content">
-                    <p>Vestibulum eget lacus at mauris sagittis varius. Etiam ut venenatis dui. Nullam tellus risus, pellentesque at facilisis et, scelerisque sit amet metus. Duis vel semper turpis, ac tempus libero. Maecenas id ultrices risus. Aenean nec ornare ipsum, lacinia volutpat urna. Maecenas ut aliquam purus, quis sodales dolor.tiam ut venenatis dui. Nullam tellus risus, pellentesque at facilisis et, scelerisque sit ame.</p>
-                </div>
-            </article>
-
-            <article class="events-news-post">
-                <header class="entry-header">
-                    <h2 class="entry-title"><a href="#">Must-see events this summer</a></h2>
-
-                    <div class="entry-meta flex align-items-center">
-                        <div class="posted-author"><a href="#">by James Williams</a></div>
-
-                        <div class="post-comments"><a href="#">2 Comments</a></div>
-                    </div>
-                </header>
-
-                <figure>
-                    <a href="#"><img src="images/news-3.jpg" alt=""></a>
-
-                    <div class="posted-date"><span>Feb</span><span>11</span><span>‘18</span></div>
-                </figure>
-
-                <div class="entry-content">
-                    <p>Vestibulum eget lacus at mauris sagittis varius. Etiam ut venenatis dui. Nullam tellus risus, pellentesque at facilisis et, scelerisque sit amet metus. Duis vel semper turpis, ac tempus libero. Maecenas id ultrices risus. Aenean nec ornare ipsum, lacinia volutpat urna. Maecenas ut aliquam purus, quis sodales dolor.tiam ut venenatis dui. Nullam tellus risus, pellentesque at facilisis et, scelerisque sit ame.</p>
-                </div>
-            </article>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-12">
-            <div class="blog-pagination">
-                <ul class="flex align-items-center">
-                    <li><a href="#">01</a></li>
-                    <li class="active"><a href="#">02</a></li>
-                    <li><a href="#">03</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
+    <div class="top">
+        <ul>
+            <li><a href="#img_1"><img src="images/dhyan.jpeg"></a></li>
+              <li><a href="#img_2"><img src="images/heer.jpeg"></a></li>
+              <li><a href="#img_3"><img src="images/sahil.jpeg"></a></li>
+              <li><a href="#img_4"><img src="images/Mili.jpg"></a></li>
+              <li><a href="#img_5"><img src="https://image.freepik.com/free-photo/sunlight-in-the-forest_1004-9.jpg"></a></li>
+              <li><a href="#img_6"><img src="https://image.freepik.com/free-photo/road-curve-landscape_426-19324358.jpg"></a></li>
+              <li><a href="#img_7"><img src="https://image.freepik.com/free-photo/shiny-lights_385-19321244.jpg"></a></li>
+              <li><a href="#img_8"><img src="https://image.freepik.com/free-photo/skyscraper-with-clouds-reflection_23-10.jpg"></a></li>
+              <li><a href="#img_9"><img src="https://image.freepik.com/free-photo/foggy-pine-forest_426-19323742.jpg"></a></li>
+              <li><a href="#img_10"><img src="https://image.freepik.com/free-photo/working-from-bed_385-19324222.jpg"></a></li>
+              <li><a href="#img_11"><img src="https://image.freepik.com/free-photo/a-sky-full-of-stars_426-19320899.jpg"></a></li>
+              <li><a href="#img_12"><img src="https://image.freepik.com/free-photo/city-in-bokeh_426-19322711.jpg"></a></li>
+              <li><a href="#img_13"><img src="https://image.freepik.com/free-photo/desert-and-the-road_426-19314945.jpg"></a></li>
+              <li><a href="#img_14"><img src="https://image.freepik.com/free-photo/sunlight-through-the-grass_385-19321333.jpg"></a></li>
+              <li><a href="#img_15"><img src="https://image.freepik.com/free-photo/colorful-springtime_385-19321241.jpg"></a></li>
+              <li><a href="#img_16"><img src="https://image.freepik.com/free-photo/from-blue-to-brown_426-19320820.jpg"></a></li>
+          </ul>
+          <a href="#_1" class="lightbox trans" id="img_1"><img src="images/dhyan.jpeg"></a>
+          <a href="#_2" class="lightbox trans" id="img_2"><img src="images/heer.jpeg"></a>
+          <a href="#_3" class="lightbox trans" id="img_3"><img src="images/sahil.jpeg"></a>
+          <a href="#_4" class="lightbox trans" id="img_4"><img src="images/Mili.jpg"></a>
+          <a href="#_5" class="lightbox trans" id="img_5"><img src="https://image.freepik.com/free-photo/sunlight-in-the-forest_1004-9.jpg"></a>
+          <a href="#_6" class="lightbox trans" id="img_6"><img src="https://image.freepik.com/free-photo/road-curve-landscape_426-19324358.jpg"></a>
+          <a href="#_7" class="lightbox trans" id="img_7"><img src="https://image.freepik.com/free-photo/shiny-lights_385-19321244.jpg"></a>
+          <a href="#_8" class="lightbox trans" id="img_8"><img src="https://image.freepik.com/free-photo/skyscraper-with-clouds-reflection_23-10.jpg"></a>
+          <a href="#_9" class="lightbox trans" id="img_9"><img src="https://image.freepik.com/free-photo/foggy-pine-forest_426-19323742.jpg"></a>
+          <a href="#_10" class="lightbox trans" id="img_10"><img src="https://image.freepik.com/free-photo/working-from-bed_385-19324222.jpg"></a>
+          <a href="#_11" class="lightbox trans" id="img_11"><img src="https://image.freepik.com/free-photo/a-sky-full-of-stars_426-19320899.jpg"></a>
+          <a href="#_12" class="lightbox trans" id="img_12"><img src="https://image.freepik.com/free-photo/city-in-bokeh_426-19322711.jpg"></a>
+          <a href="#_13" class="lightbox trans" id="img_13"><img src="https://image.freepik.com/free-photo/desert-and-the-road_426-19314945.jpg"></a>
+          <a href="#_14" class="lightbox trans" id="img_14"><img src="https://image.freepik.com/free-photo/sunlight-through-the-grass_385-19321333.jpg"></a>
+          <a href="#_15" class="lightbox trans" id="img_15"><img src="https://image.freepik.com/free-photo/colorful-springtime_385-19321241.jpg"></a>
+          <a href="#_16" class="lightbox trans" id="img_16"><img src="https://image.freepik.com/free-photo/from-blue-to-brown_426-19320820.jpg"></a>
+      </div>
+  </div>
 
 <div class="newsletter-subscribe">
     <div class="container">
