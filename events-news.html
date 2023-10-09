@@ -20,128 +20,158 @@
     <link rel="stylesheet" href="style.css">
 
     <style media="screen">
-        *{margin: 0; padding: 0;}
-body{background-color: rgb(255, 255, 255);}
-.container
-{
-  width: 100%;
-  height: 100%;
+
+body {
+  background-color: #eee;
+  padding: auto;
 }
-.trans
-{
-  transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -webkit-transition: all 1s ease;
+.hello {
+  opacity: 1 !important;
 }
-.top
-{
-  display: flex;
-  width: 80vw;
-  height: 80vh;
-  margin-top: 10vh;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10vh;
-}
-.top ul
-{
-  list-style: none;
+.full {
+  position: fixed;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
   z-index: 1;
-  box-sizing: border-box;
 }
-.top ul li
-{
-  position: relative;
-  float: left;
-  width: 25%;
-  height: 25%;
-  overflow: hidden;
+.full .content {
+  background-color: rgba(0,0,0,0.75) !important;
+  height: 100%;
+  width: 100%;
+  display: grid;
 }
+.full .content img {
+  left: 50%;
+  transform: translate3d(0, 0, 0);
+  animation: zoomin 1s ease;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+.byebye {
+  opacity: 0;
+}
+.byebye:hover {
+  transform: scale(0.2) !important;
+}
+.gallery {
+  display: grid;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 
-.top ul li::before
-{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  content: '';
-  color: white;
-  opacity: 0.4;
-  text-align: center;
-  box-sizing: border-box;
-  pointer-events: none;
+}
+.gallery img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 16px #333;
+  transition: all 1.5s ease;
+}
+.gallery img:hover {
+  box-shadow: 0 0 32px #333;
+}
+.gallery .content {
+  padding: 4px;
+}
+.gallery .gallery-item {
+  transition: grid-row-start 300ms linear;
+  transition: transform 300ms ease;
   transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
+  cursor: pointer;
 }
-.top ul li:hover::before
-{
-  opacity: 0;
-  background-color: rgba(255, 255, 255, 0.9);
+.gallery .gallery-item:hover {
+  transform: scale(1.025);
 }
-.top ul li img
-{
-  width: 100%;
-  height: auto;
-  overflow: hidden;
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  }
 }
-.lightbox
-{
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  top: 0;
-  left: 0;
-  background-color: rgb(179, 106, 179);
-  z-index: 999;
-  opacity: 0;
-  pointer-events: none;
+@media (max-width: 400px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  }
 }
-.lightbox img
-{
-  max-width: 90%;
-  max-height: 80%;
-  position: relative;
-  top: -100%;
-  /* Transition */
-  transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -webkit-transition: all 1s ease;
+@-moz-keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
 }
-.lightbox:target
-{
-  outline: none;
-  top: 0;
-  opacity: 1;
-  pointer-events: auto;
-  transition: all 1.2s ease;
-  -moz-transition: all 1.2s ease;
-  -ms-transition: all 1.2s ease;
-  -o-transition: all 1.2s ease;
-  -webkit-transition: all 1.2s ease;
+@-webkit-keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
 }
-.lightbox:target img
-{
-  top: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
+@-o-keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+}
+@keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
 }
     </style>
+  
 </head>
 <body class="events-news-page">
 <header class="site-header">
@@ -197,44 +227,84 @@ body{background-color: rgb(255, 255, 255);}
     </div>
 </header><!-- .site-header -->
 
-<div class="container">
-    <div class="top">
-        <ul>
-            <li><a href="#img_1"><img src="images/dhyan.jpeg"></a></li>
-              <li><a href="#img_2"><img src="images/heer.jpeg"></a></li>
-              <li><a href="#img_3"><img src="images/sahil.jpeg"></a></li>
-              <li><a href="#img_4"><img src="images/Mili.jpg"></a></li>
-              <li><a href="#img_5"><img src="https://image.freepik.com/free-photo/sunlight-in-the-forest_1004-9.jpg"></a></li>
-              <li><a href="#img_6"><img src="https://image.freepik.com/free-photo/road-curve-landscape_426-19324358.jpg"></a></li>
-              <li><a href="#img_7"><img src="https://image.freepik.com/free-photo/shiny-lights_385-19321244.jpg"></a></li>
-              <li><a href="#img_8"><img src="https://image.freepik.com/free-photo/skyscraper-with-clouds-reflection_23-10.jpg"></a></li>
-              <li><a href="#img_9"><img src="https://image.freepik.com/free-photo/foggy-pine-forest_426-19323742.jpg"></a></li>
-              <li><a href="#img_10"><img src="https://image.freepik.com/free-photo/working-from-bed_385-19324222.jpg"></a></li>
-              <li><a href="#img_11"><img src="https://image.freepik.com/free-photo/a-sky-full-of-stars_426-19320899.jpg"></a></li>
-              <li><a href="#img_12"><img src="https://image.freepik.com/free-photo/city-in-bokeh_426-19322711.jpg"></a></li>
-              <li><a href="#img_13"><img src="https://image.freepik.com/free-photo/desert-and-the-road_426-19314945.jpg"></a></li>
-              <li><a href="#img_14"><img src="https://image.freepik.com/free-photo/sunlight-through-the-grass_385-19321333.jpg"></a></li>
-              <li><a href="#img_15"><img src="https://image.freepik.com/free-photo/colorful-springtime_385-19321241.jpg"></a></li>
-              <li><a href="#img_16"><img src="https://image.freepik.com/free-photo/from-blue-to-brown_426-19320820.jpg"></a></li>
-          </ul>
-          <a href="#_1" class="lightbox trans" id="img_1"><img src="images/dhyan.jpeg"></a>
-          <a href="#_2" class="lightbox trans" id="img_2"><img src="images/heer.jpeg"></a>
-          <a href="#_3" class="lightbox trans" id="img_3"><img src="images/sahil.jpeg"></a>
-          <a href="#_4" class="lightbox trans" id="img_4"><img src="images/Mili.jpg"></a>
-          <a href="#_5" class="lightbox trans" id="img_5"><img src="https://image.freepik.com/free-photo/sunlight-in-the-forest_1004-9.jpg"></a>
-          <a href="#_6" class="lightbox trans" id="img_6"><img src="https://image.freepik.com/free-photo/road-curve-landscape_426-19324358.jpg"></a>
-          <a href="#_7" class="lightbox trans" id="img_7"><img src="https://image.freepik.com/free-photo/shiny-lights_385-19321244.jpg"></a>
-          <a href="#_8" class="lightbox trans" id="img_8"><img src="https://image.freepik.com/free-photo/skyscraper-with-clouds-reflection_23-10.jpg"></a>
-          <a href="#_9" class="lightbox trans" id="img_9"><img src="https://image.freepik.com/free-photo/foggy-pine-forest_426-19323742.jpg"></a>
-          <a href="#_10" class="lightbox trans" id="img_10"><img src="https://image.freepik.com/free-photo/working-from-bed_385-19324222.jpg"></a>
-          <a href="#_11" class="lightbox trans" id="img_11"><img src="https://image.freepik.com/free-photo/a-sky-full-of-stars_426-19320899.jpg"></a>
-          <a href="#_12" class="lightbox trans" id="img_12"><img src="https://image.freepik.com/free-photo/city-in-bokeh_426-19322711.jpg"></a>
-          <a href="#_13" class="lightbox trans" id="img_13"><img src="https://image.freepik.com/free-photo/desert-and-the-road_426-19314945.jpg"></a>
-          <a href="#_14" class="lightbox trans" id="img_14"><img src="https://image.freepik.com/free-photo/sunlight-through-the-grass_385-19321333.jpg"></a>
-          <a href="#_15" class="lightbox trans" id="img_15"><img src="https://image.freepik.com/free-photo/colorful-springtime_385-19321241.jpg"></a>
-          <a href="#_16" class="lightbox trans" id="img_16"><img src="https://image.freepik.com/free-photo/from-blue-to-brown_426-19320820.jpg"></a>
-      </div>
-  </div>
+<div class="gallery" id="gallery">
+    <div class="gallery-item">
+        <div class="content"><img src="https://source.unsplash.com/random/?tech,care" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="https://source.unsplash.com/random/?tech,studied" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="https://source.unsplash.com/random/?tech,substance" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="https://source.unsplash.com/random/?tech,choose" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="https://source.unsplash.com/random/?tech,past" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="https://source.unsplash.com/random/?tech,lamp" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="https://source.unsplash.com/random/?tech,yet" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="https://source.unsplash.com/random/?tech,eight" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="https://source.unsplash.com/random/?tech,crew" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="https://source.unsplash.com/random/?tech,event" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="https://source.unsplash.com/random/?tech,instrument" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="https://source.unsplash.com/random/?tech,practical" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="https://source.unsplash.com/random/?tech,pass" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="https://source.unsplash.com/random/?tech,bigger" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="https://source.unsplash.com/random/?tech,number" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="https://source.unsplash.com/random/?tech,feature" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="https://source.unsplash.com/random/?tech,line" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="https://source.unsplash.com/random/?tech,railroad" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="https://source.unsplash.com/random/?tech,pride" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="https://source.unsplash.com/random/?tech,too" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="https://source.unsplash.com/random/?tech,bottle" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="https://source.unsplash.com/random/?tech,base" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="https://source.unsplash.com/random/?tech,cell" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="https://source.unsplash.com/random/?tech,bag" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="https://source.unsplash.com/random/?tech,card" alt=""></div>
+    </div>
+</div>
+
 
 <div class="newsletter-subscribe">
     <div class="container">
