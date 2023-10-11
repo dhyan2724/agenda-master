@@ -7,8 +7,8 @@ import json
 import time
 
 # The mail addresses and password
-sender_address = ''
-sender_pass = ''
+sender_address = 'dhyanp827@gmail.com'
+sender_pass = 'dhyan#2724'
 # Setup the MIME
 
 # fetch email into this dynamic list
