@@ -1,15 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="83636a36-dd5d-40ae-87c0-78ab0afeb562" name="Default" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
+    <list default="true" id="83636a36-dd5d-40ae-87c0-78ab0afeb562" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/swiper.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/swiper.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/email.py" beforeDir="false" afterPath="$PROJECT_DIR$/email1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events-news.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Calibri.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Calibri.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Calibri.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Calibri.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/90.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Mili.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/autumn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/blockchain.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/bulb-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/calendar-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/celebration.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/check-july.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/contact-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dhyan.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/diomond-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dj123.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dj69.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/djpartubook.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/djparty.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/elements-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/event-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/event-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/event-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/event-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/event-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/event-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/event-slider-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/event-slider-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/event-slider-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/event-slider-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/event-slider-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/event-slider-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/events-in-london.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/events-news-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/events-page-header-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/featured-events-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/financialconference.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/folder-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/g.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/h.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/heer.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/himalayas.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/home1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/i.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/icon-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/icon-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/icon-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/j.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/k.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/l.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/location-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/lvp.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/m.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/mic-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/modern.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/n.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/navratri.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/navratri123.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/news-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/news-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/news-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/newsletter-bg - Copy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/newsletter-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/next-events-header-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/next2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/next3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/o.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/p.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/phone-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/pixar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/q.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/r.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/regional-events-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/sa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/sahil.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/single-event-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/smoke.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/south-porth.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/summer-festival.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/summer-festivals.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/summer.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/sunbunbook.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/sunburn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/t.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/the-pirate.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/u.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/upcoming-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/upcoming-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/upcoming-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/upcoming-events-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/v.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/w.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/wedding123.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/winterfestival..jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/x.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/y.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/z.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/circle-progress.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery.collapsible.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery.countTo.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery.countdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery.countdown.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/masonry.pkgd.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/swiper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/swiper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single-event.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/single-event10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/single-event11.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/single-event12.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/single-event2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/single-event3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/single-event4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/single-event5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/single-event6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/single-event7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/single-event8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/single-event9.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
@@ -71,6 +223,9 @@
       <replace>masonry-item</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -98,13 +253,20 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
+  <component name="ProjectId" id="2XYvZJBD3pcV5ht5LaN0pqpudos" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -166,32 +328,26 @@
       <pane id="Scratches" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Suvanno Tharu\Dropbox\Colorlib\Agenda- Events (sent)\html" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Aesha Patel\PycharmProjects\agenda-master\templates" />
+    </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
-    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/html/index.html">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.main">
     <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
       <PhpTestRunnerSettings />
       <method />
@@ -259,18 +415,40 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/html/index.html">
+      <method />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="agenda-master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.main" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <list>
+        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="83636a36-dd5d-40ae-87c0-78ab0afeb562" name="Default" comment="" />
@@ -333,10 +511,6 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/style.css">
@@ -469,14 +643,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Blanca - Personal Blog (sent)/html/js/custom.js">
+    <entry file="file://$USER_HOME$/Blanca - Personal Blog (sent)/html/js/custom.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="7" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="22" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Blanca - Personal Blog (sent)/html/index.html">
+    <entry file="file://$USER_HOME$/Blanca - Personal Blog (sent)/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="827">
           <caret line="600" column="7" lean-forward="true" selection-start-line="600" selection-start-column="7" selection-end-line="600" selection-end-column="7" />
