@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Agenda</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <style media="screen">
+
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: Exo;
+        }
+        @font-face {
+          font-family: Exo;
+          src: url(./fonts/Exo2.0-Medium.otf);
+        }
+        .main{
+          width: 100%;
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #67177b;
+        }
+        .profile-card{
+          position: relative;
+          font-family: sans-serif;
+          width: 220px;
+          height: 220px;
+          background: #fff;
+          padding: 30px;
+          border-radius: 50%;
+          box-shadow: 0 0 22px #3336;
+          transition: .6s;
+          margin: 0 25px;
+        }
+        .profile-card:hover{
+          border-radius: 10px;
+          height: 260px;
+        }
+        .profile-card .img{
+          position: relative;
+          width: 100%;
+          height: 100%;
+          transition: .6s;
+          z-index: 99;
+        }
+        .profile-card:hover .img{
+          transform: translateY(-60px);
+        }
+        .img img{
+          width: 100%;
+          border-radius: 50%;
+          box-shadow: 0 0 22px #3336;
+          transition: .6s;
+        }
+        .profile-card:hover img{
+          border-radius: 10px;
+        }
+        .caption{
+          text-align: center;
+          transform: translateY(-80px);
+          opacity: 0;
+          transition: .6s;
+        }
+        .profile-card:hover .caption{
+          opacity: 1;
+        }
+        .caption h3{
+          font-size: 21px;
+          font-family: sans-serif;
+        }
+        .caption p{
+          font-size: 15px;
+          color: #0c52a1;
+          font-family: sans-serif;
+          margin: 2px 0 9px 0;
+        }
+        .caption .social-links a{
+          color: #333;
+          margin-right: 15px;
+          font-size: 21px;
+          transition: .6s;
+        }
+        .social-links a:hover{
+          color: #0c52a1;
+        }
+     
+       </style>
+     
+</head>
+<body class="elements-page">
+
+<header class="site-header">
+    <div class="header-bar">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-10 col-lg-2 order-lg-1">
+                    <div class="site-branding">
+                        <div class="site-title">
+                            <a href="#"><img src="images/logo.png" alt="logo"></a>
+                        </div><!-- .site-title -->
+                    </div><!-- .site-branding -->
+                </div><!-- .col -->
+
+                <div class="col-2 col-lg-7 order-3 order-lg-2">
+                    <nav class="site-navigation">
+                        <div class="hamburger-menu d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div><!-- .hamburger-menu -->
+
+                        <ul>
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/elements.html">About us</a></li>
+                            <li><a href="/events.html">Events</a></li>
+                            <li><a href="/events-news.html">Gallery</a></li>
+                            <li><a href="/contact.html">Contact</a></li>
+                        </ul>
+                    </nav><!-- .site-navigation -->
+                </div><!-- .col -->
+
+                <div class="col-lg-3 d-none d-lg-block order-2 order-lg-3">
+                    <div class="buy-tickets">
+                        <a class="btn gradient-bg" href="/events.html">Buy Tickets</a>
+                    </div><!-- .buy-tickets -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container-fluid -->
+    </div><!-- .header-bar -->
+
+    <div class="page-header elements-page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <header class="entry-header">
+                        <h1 class="entry-title">About Us</h1>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </div>
+</header><!-- .site-header -->
+
+<div class="homepage-info-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4 col-lg-5">
+                <figure>
+                    <img src="images/logo-2.png" alt="logo">
+                </figure>
+            </div>
+
+            <div class="col-12 col-md-8 col-lg-7">
+                <header class="entry-header">
+                    <h2 class="entry-title">What is Agenda and why choose our services?</h2>
+                </header>
+
+                <div class="entry-content">
+                    <p>Vestibulum eget lacus at mauris sagittis varius. Etiam ut venenatis dui. Nullam tellus risus, pellentesque at facilisis et, scelerisque sit amet metus. Duis vel semper turpis, ac tempus libero. Maecenas id ultrices risus. Aenean nec ornare ipsum, lacinia volutpat urna. Maecenas ut aliquam purus, quis sodales dolor.</p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+<header class="entry-header elements-heading">
+    <center> <h2 class="entry-title" style="padding-right: 3%;">Our Team</h2></center> 
+  </header>
+<div class="main">
+    <div class="profile-card">
+        <div class="img">
+            <img src="images/dhyan.jpeg">
+        </div>
+        <div class="caption">
+            <h3>Dhyan Patel</h3>
+            <p>Founder</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/dhyan__009/"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/dhyanpatel2724?t=JBS28GFcMzhfxoXEj1rldA&s=08"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="profile-card">
+        <div class="img">
+            <img src="images/heer.jpeg">
+        </div>
+        <div class="caption">
+            <h3>Heer Patel</h3>
+            <p>CEO</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/heer.patel.__/"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="profile-card">
+        <div class="img">
+            <img src="images/sahil.jpeg">
+        </div>
+        <div class="caption">
+            <h3>Sahil Agrawal</h3>
+            <p>Management Executive</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/sahil.agrawal.007/"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="profile-card">
+        <div class="img">
+            <img src="images/Mili.jpg">
+        </div>
+        <div class="caption">
+            <h3>Mili Patel</h3>
+            <p>Event coordinator</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/mili__1905_/"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    <div class="row elements-wrap" data-wow-delay="0.1s">
+        <div class="col-12">
+            <header class="entry-header elements-heading">
+               <center> <h2 class="entry-title" style="padding-right: 3%;">Loaders</h2> </center>
+            </header>
+
+            <div class="entry-content elements-container">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="circular-progress-bar">
+                            <div class="circle" id="festivals">
+                                <strong></strong>
+                            </div>
+
+                            <h3 class="entry-title">Festivals</h3>
+                            <p>Maecenas id ultrices</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="circular-progress-bar">
+                            <div class="circle" id="concerts">
+                                <strong></strong>
+                            </div>
+
+                            <h3 class="entry-title">Concerts</h3>
+                            <p>Sancenas diultrices</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="circular-progress-bar">
+                            <div class="circle" id="conference">
+                                <strong></strong>
+                            </div>
+
+                            <h3 class="entry-title">Conference</h3>
+                            <p>Maecenas id ultrices</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="circular-progress-bar">
+                            <div class="circle" id="new_artists">
+                                <strong></strong>
+                            </div>
+
+                            <h3 class="entry-title">New artists</h3>
+                            <p>Sancenas diultrices</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row elements-wrap">
+        <div class="col-12">
+            <header class="entry-header elements-heading">
+               <center> <h2 class="entry-title" style="padding-right: 3%;">Milestones</h2> </center>
+            </header>
+
+            <div class="entry-content elements-container">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="counter-box">
+                            <div class="flex justify-content-center align-items-center">
+                                <img src="images/mic-icon.png" alt="">
+                            </div>
+
+                            <div class="entry-content">
+                                <div class="start-counter" data-to="149" data-speed="2000">5555</div>
+
+                                <h3 class="entry-title">Concerts/Year</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="counter-box">
+                            <div class="flex justify-content-center align-items-center">
+                                <img src="images/bulb-icon.png" alt="">
+                            </div>
+
+                            <div class="entry-content">
+                                <div class="start-counter" data-to="2391" data-speed="2000">5555</div>
+
+                                <h3 class="entry-title">Concerence stpeackers</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="counter-box">
+                            <div class="flex justify-content-center align-items-center">
+                                <img src="images/diomond-icon.png" alt="">
+                            </div>
+
+                            <div class="entry-content">
+                                <div class="start-counter" data-to="245" data-speed="2000">5555</div>
+
+                                <h3 class="entry-title">Amazing Ideas</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="counter-box">
+                            <div class="flex justify-content-center align-items-center">
+                                <img src="images/calendar-icon.png" alt="">
+                            </div>
+
+                            <div class="entry-content">
+                                <div class="start-counter" data-to="128" data-speed="2000">5555</div>
+
+                                <h3 class="entry-title">Calendar Events</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+<div style="height: 120px"></div>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <figure class="footer-logo">
+                    <a href="#"><img src="images/logo.png" alt="logo"></a>
+                </figure>
+
+                
+
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |  <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Dhyan Patel</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
+                <div class="footer-social">
+                    <ul class="flex flex-wrap justify-content-center align-items-center">
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="back-to-top flex justify-content-center align-items-center">
+    <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1395 1184q0 13-10 23l-50 50q-10 10-23 10t-23-10l-393-393-393 393q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l466 466q10 10 10 23z"/></svg></span>
+</div>
+
+<script type='text/javascript' src='js/jquery.js'></script>
+<script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
+<script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+<script type='text/javascript' src='js/swiper.min.js'></script>
+<script type='text/javascript' src='js/jquery.countdown.min.js'></script>
+<script type='text/javascript' src='js/circle-progress.min.js'></script>
+<script type='text/javascript' src='js/jquery.countTo.min.js'></script>
+<script type='text/javascript' src='js/custom.js'></script>
+
+</body>
+</html>

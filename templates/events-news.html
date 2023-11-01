@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Agenda</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <style media="screen">
+
+body {
+  background-color: #eee;
+  padding: auto;
+}
+.hello {
+  opacity: 1 !important;
+}
+.full {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.full .content {
+  background-color: rgba(0,0,0,0.75) !important;
+  height: 100%;
+  width: 100%;
+  display: grid;
+}
+.full .content img {
+  left: 50%;
+  transform: translate3d(0, 0, 0);
+  animation: zoomin 1s ease;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+.byebye {
+  opacity: 0;
+}
+.byebye:hover {
+  transform: scale(0.2) !important;
+}
+.gallery {
+  display: grid;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+}
+.gallery img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 16px #333;
+  transition: all 1.5s ease;
+}
+.gallery img:hover {
+  box-shadow: 0 0 32px #333;
+}
+.gallery .content {
+  padding: 4px;
+}
+.gallery .gallery-item {
+  transition: grid-row-start 300ms linear;
+  transition: transform 300ms ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.gallery .gallery-item:hover {
+  transform: scale(1.025);
+}
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  }
+}
+@media (max-width: 400px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  }
+}
+@-moz-keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+}
+@-o-keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+}
+@keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+}
+    </style>
+  
+</head>
+<body class="events-news-page">
+<header class="site-header">
+    <div class="header-bar">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-10 col-lg-2 order-lg-1">
+                    <div class="site-branding">
+                        <div class="site-title">
+                            <a href="#"><img src="images/logo.png" alt="logo"></a>
+                        </div><!-- .site-title -->
+                    </div><!-- .site-branding -->
+                </div><!-- .col -->
+
+                <div class="col-2 col-lg-7 order-3 order-lg-2">
+                    <nav class="site-navigation">
+                        <div class="hamburger-menu d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div><!-- .hamburger-menu -->
+
+                        <ul>
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/elements.html">About us</a></li>
+                            <li><a href="/events.html">Events</a></li>
+                            <li><a href="/events-news.html">Gallery</a></li>
+                            <li><a href="/contact.html">Contact</a></li>
+                        </ul>
+                    </nav><!-- .site-navigation -->
+                </div><!-- .col -->
+
+                <div class="col-lg-3 d-none d-lg-block order-2 order-lg-3">
+                    <div class="buy-tickets">
+                        <a class="btn gradient-bg" href="/events.html">Buy Tickets</a>
+                    </div><!-- .buy-tickets -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container-fluid -->
+    </div><!-- .header-bar -->
+
+    <div class="page-header events-news-page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <header class="entry-header">
+                        <h1 class="entry-title">Gallery</h1>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </div>
+</header><!-- .site-header -->
+
+<div class="gallery" id="gallery">
+    <div class="gallery-item">
+        <div class="content"><img src="/images/a.jpg" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="/images/b.jpg" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="/images/c.jpg" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="/images/d.jpg" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="/images/e.jpg" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="/images/f.jpg" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="/images/g.jpg" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="/images/h.jpg" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="/images/i.jpg" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="/images/j.jpg" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="/images/k.jpg" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="/images/l.jpg" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="/images/m.jpg" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="/images/n.jpg" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="/images/o.jpg" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="/images/p.jpg" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="/images/q.jpg" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="images/r.jpg"  alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="/images/s.jpg" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="/images/t.jpg" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="/images/u.jpg" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="/images/v.jpg" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="/images/w.jpg" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="/images/x.jpg" alt=""></div>
+    </div>
+    <div class="gallery-item">
+        <div class="content"><img src="/images/y.jpg" alt=""></div>
+    </div>
+</div>
+
+
+<div class="newsletter-subscribe">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <header class="entry-header">
+                    <h2 class="entry-title">Subscribe to our newsletter to get the latest trends & news</h2>
+                    <p>Join our database NOW!</p>
+                </header>
+
+                <div class="newsletter-form">
+                    <form class="flex flex-wrap justify-content-center align-items-center">
+                        <div class="col-md-12 col-lg-3">
+                            <input type="text" placeholder="Name">
+                        </div>
+
+                        <div class="col-md-12 col-lg-6">
+                            <input type="email" placeholder="Your e-mail">
+                        </div>
+
+                        <div class="col-md-12 col-lg-3">
+                            <input class="btn gradient-bg" type="submit" value="Subscribe">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <figure class="footer-logo">
+                    <a href="#"><img src="images/logo.png" alt="logo"></a>
+                </figure>
+
+               
+
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |  <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Dhyan Patel</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
+                <div class="footer-social">
+                    <ul class="flex flex-wrap justify-content-center align-items-center">
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="back-to-top flex justify-content-center align-items-center">
+    <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1395 1184q0 13-10 23l-50 50q-10 10-23 10t-23-10l-393-393-393 393q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l466 466q10 10 10 23z"/></svg></span>
+</div>
+
+<script type='text/javascript' src='js/jquery.js'></script>
+<script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
+<script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+<script type='text/javascript' src='js/swiper.min.js'></script>
+<script type='text/javascript' src='js/jquery.countdown.min.js'></script>
+<script type='text/javascript' src='js/circle-progress.min.js'></script>
+<script type='text/javascript' src='js/jquery.countTo.min.js'></script>
+<script type='text/javascript' src='js/custom.js'></script>
+
+</body>
+</html>
