@@ -8,16 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
 
     <!-- FontAwesome CSS -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
 
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/swiper.css') }}">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <style media="screen">
 
@@ -115,7 +115,7 @@
                 <div class="col-10 col-lg-2 order-lg-1">
                     <div class="site-branding">
                         <div class="site-title">
-                            <a href="#"><img src="images/logo.png" alt="logo"></a>
+                            <a href="#"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="logo"></a>
                         </div><!-- .site-title -->
                     </div><!-- .site-branding -->
                 </div><!-- .col -->
@@ -166,7 +166,7 @@
         <div class="row">
             <div class="col-12 col-md-4 col-lg-5">
                 <figure>
-                    <img src="images/logo-2.png" alt="logo">
+                    <img src="{{ url_for('static', filename='images/logo-2.png') }}" alt="logo">
                 </figure>
             </div>
 
@@ -190,7 +190,7 @@
 <div class="main">
     <div class="profile-card">
         <div class="img">
-            <img src="images/dhyan.jpeg">
+            <img src="{{ url_for('static', filename='images/dhyan.jpeg') }}">
         </div>
         <div class="caption">
             <h3>Dhyan Patel</h3>
@@ -203,7 +203,7 @@
     </div>
     <div class="profile-card">
         <div class="img">
-            <img src="images/heer.jpeg">
+            <img src="{{ url_for('static', filename='images/heer.jpeg') }}">
         </div>
         <div class="caption">
             <h3>Heer Patel</h3>
@@ -216,7 +216,7 @@
     </div>
     <div class="profile-card">
         <div class="img">
-            <img src="images/sahil.jpeg">
+            <img src="{{ url_for('static', filename='images/sahil.jpeg') }}">
         </div>
         <div class="caption">
             <h3>Sahil Agrawal</h3>
@@ -229,7 +229,7 @@
     </div>
     <div class="profile-card">
         <div class="img">
-            <img src="images/Mili.jpg">
+            <img src="{{ url_for('static', filename='images/Mili.jpg') }}">
         </div>
         <div class="caption">
             <h3>Mili Patel</h3>
@@ -312,7 +312,7 @@
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="counter-box">
                             <div class="flex justify-content-center align-items-center">
-                                <img src="images/mic-icon.png" alt="">
+                                <img src="{{ url_for('static', filename='images/mic-icon.png') }}" alt="">
                             </div>
 
                             <div class="entry-content">
@@ -326,7 +326,7 @@
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="counter-box">
                             <div class="flex justify-content-center align-items-center">
-                                <img src="images/bulb-icon.png" alt="">
+                                <img src="{{ url_for('static', filename='images/bulb-icon.png') }}" alt="">
                             </div>
 
                             <div class="entry-content">
@@ -340,7 +340,7 @@
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="counter-box">
                             <div class="flex justify-content-center align-items-center">
-                                <img src="images/diomond-icon.png" alt="">
+                                <img src="{{ url_for('static', filename='images/diomond-icon.png') }}" alt="">
                             </div>
 
                             <div class="entry-content">
@@ -354,7 +354,7 @@
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="counter-box">
                             <div class="flex justify-content-center align-items-center">
-                                <img src="images/calendar-icon.png" alt="">
+                                <img src="{{ url_for('static', filename='images/calendar-icon.png') }}" alt="">
                             </div>
 
                             <div class="entry-content">
@@ -378,7 +378,7 @@
         <div class="row">
             <div class="col-12">
                 <figure class="footer-logo">
-                    <a href="#"><img src="images/logo.png" alt="logo"></a>
+                    <a href="#"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="logo"></a>
                 </figure>
 
                 
@@ -405,14 +405,24 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1395 1184q0 13-10 23l-50 50q-10 10-23 10t-23-10l-393-393-393 393q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l466 466q10 10 10 23z"/></svg></span>
 </div>
 
-<script type='text/javascript' src='js/jquery.js'></script>
-<script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
-<script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
-<script type='text/javascript' src='js/swiper.min.js'></script>
-<script type='text/javascript' src='js/jquery.countdown.min.js'></script>
-<script type='text/javascript' src='js/circle-progress.min.js'></script>
-<script type='text/javascript' src='js/jquery.countTo.min.js'></script>
-<script type='text/javascript' src='js/custom.js'></script>
+<!--<script type='text/javascript' src='js/jquery.js'></script>-->
+<!--<script type='text/javascript' src='js/masonry.pkgd.min.js'></script>-->
+<!--<script type='text/javascript' src='js/jquery.collapsible.min.js'></script>-->
+<!--<script type='text/javascript' src='js/swiper.min.js'></script>-->
+<!--<script type='text/javascript' src='js/jquery.countdown.min.js'></script>-->
+<!--<script type='text/javascript' src='js/circle-progress.min.js'></script>-->
+<!--<script type='text/javascript' src='js/jquery.countTo.min.js'></script>-->
+<!--<script type='text/javascript' src='js/custom.js'></script>-->
+
+<script type='text/javascript' src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+<script type='text/javascript' src="{{ url_for('static', filename='js/masonry.pkgd.min.js') }}"></script>
+<script type='text/javascript' src="{{ url_for('static', filename='js/jquery.collapsible.min.js') }}"></script>
+<script type='text/javascript' src="{{ url_for('static', filename='js/swiper.min.js') }}"></script>
+<script type='text/javascript' src="{{ url_for('static', filename='js/jquery.countdown.min.js') }}"></script>
+<script type='text/javascript' src="{{ url_for('static', filename='js/circle-progress.min.js') }}"></script>
+<script type='text/javascript' src="{{ url_for('static', filename='js/jquery.countTo.min.js') }}"></script>
+<script type='text/javascript' src="{{ url_for('static', filename='js/custom.js') }}"></script>
+
 
 </body>
 </html>

@@ -5,7 +5,7 @@ import os
 
 # Flask constructor takes the name of 
 # current module (__name__) as argument.
-app = Flask(__name__	)
+app = Flask(__name__)
 
 # The route() function of the Flask class is a decorator, 
 # which tells the application which URL should call 
@@ -14,9 +14,31 @@ app = Flask(__name__	)
 print(os.listdir())
 
 @app.route('/')
-# ‘/’ URL is bound with hello_world() function.
-def hello_world():
+@app.route('/index')
+def index():
 	return render_template("index.html")
+
+@app.route('/elements')
+def aboutUs():
+	return render_template("elements.html")
+
+@app.route('/events')
+def events():
+	return render_template("events.html")
+
+@app.route('/events-news')
+def gallery():
+	return render_template("events-news.html")
+
+@app.route('/contact')
+def contact():
+	return render_template("contact.html")
+
+@app.route('/singleEvent')
+def singleEvent():
+	return render_template("single-event10.html")
+
+
 
 # main driver function
 if __name__ == '__main__':
