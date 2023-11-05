@@ -13,7 +13,7 @@
 :root{
 
 --weddingImage: url("../static/images/wedding123.jpeg");
---dj69  : url("../static/images/dj69.jpg");
+-- dj69 : url("../static/images/dj69.jpg");
 --featuredEventsBg: url("{{ url_for('static', filename='images/featured-events-bg.jpg') }}");
 
 --CalibriEot: url('../static/fonts/Calibri.eot?#iefix');
