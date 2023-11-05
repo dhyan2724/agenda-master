@@ -37,6 +37,9 @@ def contact():
 @app.route('/singleEvent')
 def singleEvent():
 	return render_template("single-event10.html")
+@app.route('/index1')
+def index1():
+	return render_template("index1.html")
 
 
 
